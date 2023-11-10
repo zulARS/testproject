@@ -1,0 +1,25 @@
+{
+    "name": "mbsp/sisken",
+    "description": "MBSP Sisken API",
+    "autoload": {
+        "psr-4": {
+            "Mbsp\\Sisken\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zul"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mbsp\\Sisken\\SiskenServiceProvider"
+            ],
+            "aliases": {
+                "Sisken": "Mbsp\\Sisken\\Facades\\Sisken"
+            }
+        }
+    }
+}
